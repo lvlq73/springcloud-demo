@@ -1,0 +1,19 @@
+server:
+  port: 8000
+spring:
+  security:
+    user:
+        name: lvlq
+        password: arsenal73
+eureka:
+  instance:
+    # 单机 hostname: localhost #eureka注册中心实例名称
+    hostname: localhost
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5 # 心跳时间，即服务续约间隔时间（缺省为30s）
+    lease-expiration-duration-in-seconds: 10 # 发呆时间，即服务续约到期时间（缺省为90s）
+  client:
+    register-with-eureka: false     #false 由于该应用为注册中心，所以设置为false,代表不向注册中心注册自己。
+    fetch-registry: false     #false 由于注册中心的职责就是维护服务实例，它并不需要去检索服务，所以也设置为false
+    service-url:
+      defaultZone:  http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/

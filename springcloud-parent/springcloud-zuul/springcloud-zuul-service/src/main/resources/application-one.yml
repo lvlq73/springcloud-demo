@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: gateway-service-zuul
+server:
+  port: 6000
+zuul:
+  routes:
+    baidu:
+      path: /llq/**
+      url: http://www.baidu.com/

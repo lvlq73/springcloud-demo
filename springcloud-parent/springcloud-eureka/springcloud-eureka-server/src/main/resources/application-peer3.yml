@@ -1,0 +1,10 @@
+server:
+  port: 8002
+
+eureka:
+  instance:
+    # 单机 hostname: localhost #eureka注册中心实例名称
+    hostname: peer3 # 集群
+  client:
+    service-url:
+      defaultZone: http://peer1:8000/eureka/,http://peer2:8001/eureka/

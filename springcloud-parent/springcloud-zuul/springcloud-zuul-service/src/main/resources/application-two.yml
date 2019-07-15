@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: gateway-service-zuul
+server:
+  port: 6000
+#zuul路由转发功能，可不用写，zuul会自动转发eureka上已注册的服务，路径为每个服务的id
+zuul:
+  routes:
+    provider:
+      path: /provider/**
+      serviceId: springcloud-provider-service
+  #有时候因为网络或者其它原因，服务可能会暂时的不可用，这个时候我们希望可以再次对服务进行重试，Zuul也帮我们实现了此功能，需要结合Spring Retry 一起来实现。
+  retryable: true
+#对当前服务的重试次数
+ribbon:
+  MaxAutoRetries: 2
+#切换相同Server的次数
+  MaxAutoRetriesNextServer: 0
+#将zuul服务化注册到eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://lvlq:arsenal73@localhost:8000/eureka/
+
