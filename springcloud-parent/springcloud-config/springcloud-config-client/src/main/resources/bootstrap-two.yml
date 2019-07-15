@@ -1,0 +1,19 @@
+#高可用服务化配置中心
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+        label: master
+        name: config-client
+        profile: pro
+        discovery:
+          enabled: true
+          service-id: spring-cloud-config-server
+server:
+  port: 7002
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/

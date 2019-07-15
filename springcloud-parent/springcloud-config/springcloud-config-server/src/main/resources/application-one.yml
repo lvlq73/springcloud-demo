@@ -1,0 +1,11 @@
+#本地配置中心
+server:
+  port: 7001
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config

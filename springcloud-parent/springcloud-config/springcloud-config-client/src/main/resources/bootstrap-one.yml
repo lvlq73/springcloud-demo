@@ -1,0 +1,12 @@
+#本地配置中心
+spring:
+  application:
+    name: other-client
+  cloud:
+    config:
+      profile: pro
+      uri: http://localhost:7001/
+      username: lvlq
+      password: arsenal73
+server:
+  port: 7002
