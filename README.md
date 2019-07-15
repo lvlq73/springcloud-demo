@@ -1,0 +1,2 @@
+# springcloud-demo
+自己搭建的一个springcloud的demo框架，并没有应用到springcloud的全部功能，但可以供给初学者参考
