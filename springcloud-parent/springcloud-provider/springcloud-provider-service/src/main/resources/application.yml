@@ -9,6 +9,6 @@ eureka:
     fetch-registry: true     #false 由于注册中心的职责就是维护服务实例，它并不需要去检索服务，所以也设置为false
     registry-fetch-interval-seconds: 5 # 默认为30秒
     service-url: #Eureka客户端与Eureka服务端进行交互的地址
-      defaultZone: http://lvlq:arsenal73@localhost:8000/eureka/
+      defaultZone: http://xxx:xxx@localhost:8000/eureka/
   instance:
     prefer-ip-address: true #将自己的ip地址注册到Eureka服务中
