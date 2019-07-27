@@ -20,5 +20,5 @@ ribbon:
 eureka:
   client:
     service-url:
-      defaultZone: http://lvlq:arsenal73@localhost:8000/eureka/
+      defaultZone: http://xxx:xxx@localhost:8000/eureka/
 
