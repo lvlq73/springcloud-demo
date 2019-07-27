@@ -8,8 +8,8 @@ spring:
         git:
             uri: https://github.com/lvlq73/config/
             search-paths: config-repo
-            username: lvlq73
-            password: arsenal73
+            username: xxx
+            password: xxx
   application:
     name: spring-cloud-config-server
 eureka:
