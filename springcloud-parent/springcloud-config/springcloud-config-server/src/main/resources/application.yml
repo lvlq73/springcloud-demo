@@ -3,5 +3,5 @@ spring:
     active: one,native
   security:
     user:
-        name: lvlq
-        password: arsenal73
+        name: xxx
+        password: xxx
