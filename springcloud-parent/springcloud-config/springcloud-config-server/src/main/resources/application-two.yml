@@ -6,7 +6,7 @@ spring:
     config:
       server:
         git:
-            uri: https://github.com/lvlq73/config/
+            uri: https://自己的git存放地址
             search-paths: config-repo
             username: xxx
             password: xxx
