@@ -3,8 +3,8 @@ server:
 spring:
   security:
     user:
-        name: lvlq
-        password: arsenal73
+        name: xxx
+        password: xxx
 eureka:
   instance:
     # 单机 hostname: localhost #eureka注册中心实例名称
