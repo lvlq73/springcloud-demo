@@ -6,7 +6,7 @@ spring:
     config:
       profile: pro
       uri: http://localhost:7001/
-      username: lvlq
-      password: arsenal73
+      username: xxx
+      password: xxx
 server:
   port: 7002
